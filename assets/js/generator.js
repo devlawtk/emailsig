@@ -8,11 +8,10 @@ $("#genSig").click(function() {
     let cardHTML = `
     <img class="imgOBS px-1" src="./assets/images/obsHomeLog.png" />
     <div class="vl imgOBS pl-2"></div>
-    <h5 class="card-title">${name}</h5>
+    <h5 class="card-title">${name}</h5><br/>
     <h6 class="card-subtitle mb-2 text-muted">${title}</h6>
-    <small class="card-subtitle mb-2">Cell: ${phone}</small><br />
-    <small><a href="mailto:${email}" class="card-link">${email}</a></small
-    ><br />
+    <small class="card-subtitle mb-2">Cell: ${phone}</small><br/>
+    <small><a href="mailto:${email}" class="card-link">${email}</a></small><br/>
     <a href="#" class="card-link">OBSatHome.com</a>
     ` 
 
