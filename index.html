@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="./assets/css/style.css" />
+		<title>OBS at Home Email Signature</title>
+	</head>
+	<body>
+		<div class="jumbotron">
+			<img class="imgOBS px-3" src="./assets/images/obsHomeLog.png" />
+			<h1>Welcome to the OBS at Home email signature generator</h1>
+			<p class="lead">
+				This page will generate a company standard email signature
+			</p>
+			<hr class="my-1" />
+		</div>
+
+		<div class="container border rounded">
+			<form>
+				<div class="form-group">
+					<label for="inputEmail">Email address</label>
+					<input
+						type="email"
+						class="form-control"
+						id="inputEmail"
+						placeholder="name@example.com"
+					/>
+				</div>
+				<div class="form-group">
+					<label for="inputName">Enter your name</label>
+					<input
+						type="text"
+						class="form-control"
+						id="inputName"
+						placeholder="John Doe"
+					/>
+				</div>
+				<div class="form-group">
+					<label for="inputCell">Enter your cell number</label>
+					<input
+						type="text"
+						class="form-control"
+						id="inputPhone"
+						placeholder="(555)-555-5555"
+					/>
+				</div>
+				<div class="form-group">
+					<label for="inputCell">Enter your title</label>
+					<input
+						type="text"
+						class="form-control"
+						id="inputTitle"
+						placeholder="Chief Financial Officer"
+					/>
+				</div>
+			</form>
+            <div id="genSig">
+                <a class="btn btn-primary mb-2" href="#">Generate Signature</a>
+            </div>
+		</div>
+
+		<div class="container mt-3 d-none" id="cardMain">
+			<div class="card" style="width: 22rem;">
+				<div class="card-body" id="cardBod">
+				</div>
+			</div>
+		</div>
+
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.slim.js"
+			integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+			crossorigin="anonymous"
+		></script>
+		<script src="./assets/js/generator.js"></script>
+	</body>
+</html>
